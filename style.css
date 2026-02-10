@@ -102,13 +102,78 @@ header {
     margin-left: 5px;
 }
 
-main{
-    
+main {
+    min-height: 600px;
+    padding: 0 50px;
+    background-color: #270c03;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
+.container-home {
+    margin: 0 auto;
+    padding: 3rem;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+}
 
+.div-text-home {
+    text-align: start;
+}
 
+.h1-text-home {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.span-h1-home {
+    font-family: "Pacifico", cursive;
+    color: #854d3d;
+}
+
+.button-home {
+    background: linear-gradient(to right, #854d3d, #4a1e1b);
+    border: 2px solid #854d3d;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.img-home {
+    width: 550px;
+    transform: scale(1.25);
+    animation: balanco 5s linear infinite;
+}
+
+@keyframes balanco {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 
 @media screen and (max-width: 974px) {
@@ -128,5 +193,73 @@ main{
 
     .div-logo a {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1137px) {
+    .h1-text-home {
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (max-width: 1069px) {
+    .h1-text-home {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .h1-text-home {
+        font-size: 3.1rem;
+    }
+
+    .img-home {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    main {
+        min-height: 550px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .div-text-home {
+        text-align: center;
+    }
+
+    .h1-text-home {
+        font-size: 3.6rem;
+    }
+
+    .img-home {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-home {
+        padding: 50px 0;
+    }
+
+    .h1-text-home {
+        font-size: 3rem;
+    }
+    .img-home{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    .h1-text-home {
+        font-size: 2.2rem;
+    }
+    .img-home{
+        width: 250px;
     }
 }
