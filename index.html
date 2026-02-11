@@ -14,13 +14,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/logo-cafe.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>DevCafé</title>
 </head>
 
 <body>
     <header>
-        <div class="container-header">
+        <div class="container-header" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
             <div class="div-logo">
                 <a href="#">
                     <img src="./img/logo-cafe.png" alt="logo-cafe" class="div-logo-img">
@@ -64,12 +67,12 @@
     </main>
 
     <section class="section-services">
-        <div class="container-services">
+        <div class="container-services" data-aos="fade-up" data-aos-delay="100">
             <h1 class="title-section-services"> O Café feito para você</h1>
         </div>
 
         <div class="div-card">
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="350">
                 <div class="div-card-img">
                     <img class="img-card" src="./img/american.png" alt="café americano">
                 </div>
@@ -80,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="div-card-img">
                     <img class="img-card" src="./img/cafe-expresso.png" alt="café americano">
                 </div>
@@ -91,7 +94,7 @@
                 </div>
             </div>
 
-            <div class="service-card">
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
                 <div class="div-card-img">
                     <img class="img-card" src="./img/capuccino.png" alt="café americano">
                 </div>
@@ -106,6 +109,23 @@
         </div>
         </div>
     </section>
+
+    <footer>
+        <div class="div-logo div-logo-footer">
+            <a href="#">
+                <img class="div-logo-img" src="./img/logo-cafe.png" alt="logo-cafe">
+                Cafeteria do Dev
+            </a>
+            <p class="p-footer">Desenvolvido por Lacb</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
 </body>
 
 </html>

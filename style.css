@@ -178,52 +178,52 @@ main {
 }
 
 
-.section-services{
+.section-services {
     padding: 2.5rem 3rem;
     margin: 0 auto;
     min-width: 600px;
 }
 
-.container-services{
+.container-services {
     text-align: center;
     margin: 0 auto 5rem;
     padding: 0 3rem;
 }
 
-.title-section-services{
+.title-section-services {
     font-size: 2.25rem;
     font-weight: bold;
     font-family: "Pacifico", cursive;
     color: #2d3748;
 }
 
-.div-card{
+.div-card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
     place-items: center;
 }
 
-.service-card{
-     border-radius: 1rem;
-     background-color: white;
-     box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
-     transition: all 0.5s ease;
-     max-width: 300px;
-     position: relative;
+.service-card {
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.5s ease;
+    max-width: 300px;
+    position: relative;
 }
 
-.service-card:hover{
+.service-card:hover {
     background-color: #854d3d;
-    color: white; 
+    color: white;
     cursor: pointer;
 }
 
-.div-card-img{
+.div-card-img {
     height: 122px;
 }
 
-.img-card{
+.img-card {
     max-width: 200px;
     display: block;
     margin: 0 auto;
@@ -231,23 +231,23 @@ main {
     transition: transform 0.3s ease, scale 0.3s ease;
 }
 
-.service-card:hover .img-card{
+.service-card:hover .img-card {
     transform: translateY(-3.5rem) scale(1.05) rotate(6deg);
 }
 
-.div-text-services-card{
+.div-text-services-card {
     padding: 1rem;
     text-align: center;
 }
 
-.h1-card-service{
+.h1-card-service {
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
-.p-card-service{
+.p-card-service {
     color: #6b7280;
     transition: all 0.7s ease;
     font-size: 0.875rem;
@@ -261,13 +261,28 @@ main {
     -webkit-line-clamp: 2;
 }
 
-.service-card:hover .p-card-service{
+.service-card:hover .p-card-service {
     color: #ffffff
 }
 
 
+footer{
+    background-color: #270c03;
+    min-height: 150px;
+    padding: 1rem;
+}
 
+.div-logo-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.p-footer{
+    color: white;
+    margin: 1rem;
+}
 
 
 
@@ -345,7 +360,8 @@ main {
     .h1-text-home {
         font-size: 3rem;
     }
-    .img-home{
+
+    .img-home {
         width: 350px;
     }
 }
@@ -355,7 +371,34 @@ main {
     .h1-text-home {
         font-size: 2.2rem;
     }
-    .img-home{
+
+    .img-home {
         width: 250px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .div-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .div-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3.5rem;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .div-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3.5rem;
     }
 }
